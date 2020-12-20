@@ -174,7 +174,7 @@ We deploy Pod Identity using a Helm chart. The chart will install Node Managed I
 
 ```azurecli-interactive
 helm repo add aad-pod-identity https://raw.githubusercontent.com/Azure/aad-pod-identity/master/charts
-helm install pod-identity aad-pod-identity/aad-pod-identity
+helm install pod-identity aad-pod-identity/aad-pod-identity --set nmi.allowNetworkPluginKubenet='true'
 kubectl get pods
 
 NAME                                   READY   STATUS              RESTARTS   AGE
