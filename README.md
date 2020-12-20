@@ -24,6 +24,8 @@ Now that we have access to Key Vault, we can use its SDK or REST API in the appl
 
 This tutorial will help you to securely retrieve secrets in Key Vault right from the Pod using Secrets Store CSI and AAD Pod Identity.
 
+![Alt text](./NMI.jpg?raw=true "Pod Identity")
+
 ## Setting up the environment
 
 To complete this workshop, we need az, kubectl and helm CLI. Also, we need to create the following resources in Azure:
